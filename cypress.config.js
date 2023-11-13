@@ -23,13 +23,13 @@ async function setupNodeEvents(on, config) {
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
-    specPattern: "cypress/e2e/features/*.feature",
-    //specPattern: "cypress/integration/*.*.js",
+    //specPattern: "cypress/e2e/features/*.feature",
+    specPattern: "cypress/integration/*.*.js",
     baseUrl: "https://practice.automationtesting.in",
     //baseUrl: "https://www.saucedemo.com",
-    projectId: "CYPRESS_ID_KEY",
-    //viewportWidth: 1920,
-    //viewportHeight: 1280,
+    projectId: "pg8adw",
+    viewportWidth: 1920,
+    viewportHeight: 1280,
     chromeWebSecurity: false,
     env: {
       allureReuseAfterSpec: true,

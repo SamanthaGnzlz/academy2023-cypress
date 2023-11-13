@@ -1,5 +1,5 @@
 {
-  "name": "cypress-cucumber-boilerplate",
+  "name": "cypress",
   "version": "2.2.0",
   "description": "This project is meant to be a kind of template to start working with Cucumber and Cypress just cloning the project.",
   "main": "index.js",
@@ -14,24 +14,31 @@
     "cy:open": "cypress open",
     "cy:spec": "cypress run --spec **/*.spec.js",
     "cy:reporter": "cypress run --reporter reporters/lippia-reporter/lippia-reporter.js",
-    "cy:local": "./node_modules/.bin/cypress run",
-    "cy:run": "cypress run --record --key CYPRESS_RECORD_KEY"
+    "cy:local": "cypress run",
+    "cy:run": "cypress run --record --key 30503f70-d004-4f8e-b8dc-38ebb5970c49"
   },
   "keywords": [
     "cypress"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/JuanAndresTrejo/academy2023-cypress-basic.git"
+    "url": "git+https://github.com/JuanAndresTrejo/academy2023-cypress-basic.git"
   },
   "author": "cucumber",
   "license": "ISC",
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^18.0.6",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
-    "@shelex/cypress-allure-plugin": "^2.34.0",
-    "cypress": "^13.3.1",
+    "@shelex/cypress-allure-plugin": "^2.5.0",
+    "cypress": "^13.5.0",
     "esbuild": "^0.16.4",
     "multiple-cucumber-html-reporter": "^3.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/JuanAndresTrejo/academy2023-cypress-basic/issues"
+  },
+  "homepage": "https://github.com/JuanAndresTrejo/academy2023-cypress-basic#readme",
+  "dependencies": {
+    "cypress-downloadfile": "^1.2.3"
   }
 }
